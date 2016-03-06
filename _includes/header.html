@@ -9,19 +9,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Walang Wagi Sa Yosi</a>
+        <a class="navbar-brand">
+          <img class="visible-xs" src="{{ site.baseurl }}/images/lungs-monoline.png">
+          <span>#SmokeFreePH</span>
+        </a>
       </div>
 
-      <div class="km-navbar-brand">
-        <a style="position: absolute;left: calc(50% - 10px);top: 10px;">Yas</a>
+      <div class="km-navbar-brand hidden-xs">
+        <a><img src="{{ site.baseurl }}/images/logo-full.png"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a>Stories</a></li>
-          <li><a>About</a></li>
-          <li><a>Info</a></li>
-          <li><a>Social</a></li>
+          <li><a href="{{ site.baseurl }}#stories">Stories</a></li>
+          <li><a href="{{ site.baseurl }}#about">About</a></li>
+          <li><a href="{{ site.baseurl }}#info">Info</a></li>
+          <li class="hidden"><a href="{{ site.baseurl }}#social">Social</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

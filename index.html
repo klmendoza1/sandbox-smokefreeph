@@ -3,38 +3,86 @@ layout: main
 static: no
 ---
 
-<section>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <p>
-          Lorem ipsum dolor sit amet
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.
-        </p>
-        <a>Stories</a>
+<section class="km-jumbotron" style="background-image:url('{{ site.baseurl }}/images/bg.jpg')">
+  <section class="km-jumbotron-overlay">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="km-jumbotron-margin-top"></div>
+          <p class="km-jumbotron-title">
+            Lorem ipsum dolor sit amet
+          </p>
+          <p class="km-jumbotron-subtext">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
+          </p>
+          <div class="text-center">
+            <a class="btn btn-default km-btn km-jumbotron-btn">Stories</a>
+          </div>
+          <div class="km-jumbotron-margin-bottom"></div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </section>
 
-<section>
+<section id="stories" class="section-main">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row row-limit">
       <div class="col-lg-12">
         <h1>
           Stories
         </h1>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="panel panel-default panel-stories">
+              <div class="panel-heading">
+                <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
+                <h3 class="h3-stories">Lorem ipsum dolor</h3>
+              </div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-default panel-stories">
+              <div class="panel-heading">
+                <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
+                <h3 class="h3-stories">Lorem ipsum dolor</h3>
+              </div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-default panel-stories">
+              <div class="panel-heading">
+                <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
+                <h3 class="h3-stories">Lorem ipsum dolor</h3>
+              </div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <img>
         <p>
           Live life. There's more to life than the stick you light.
         </p>
         <p>
-          Some copy about how smoking affects the life not only of the people
-          who do it but also of the people around them. Lorem ipsum dolor sit
+          Some copy about how smoking affects life. Lorem ipsum dolor sit
           amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
           tincidunt ut laoreet dolore magna aliquam erat volutpat. Emotional.
         </p>
@@ -43,19 +91,19 @@ static: no
   </div>
 </section>
 
-<section>
+<section id="about" class="section-main section-gradient">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row row-limit">
       <div class="col-lg-12">
         <h1>
           The Campaign
         </h1>
-        <img>
+        <img class="img-logo img-responsive" src="{{ site.baseurl }}/images/logo-full.png">
         <p>
           Sometimes, quitting is the best way to win.
         </p>
         <p>
-          Walang Wagi Sa Yois is lorem ipsum dolor sit
+          Walang Wagi Sa Yosi is lorem ipsum dolor sit
           amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
           tincidunt ut laoreet dolore magna aliquam erat volutpat. Emotional.
         </p>
@@ -64,46 +112,127 @@ static: no
   </div>
 </section>
 
-<section>
+<section id="info" class="section-main section-dark">
   <div class="container-fluid">
 
-    <div class="row">
+    <div class="row row-limit">
       <div class="col-lg-12">
         <h1>
           Smoking in Numbers
         </h1>
+        <div class="row">
+          <div class="col-lg-4 col-numbers">
+            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat.</p>
+          </div>
+          <div class="col-lg-4 col-numbers">
+            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat.</p>
+          </div>
+          <div class="col-lg-4 col-numbers">
+            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat.</p>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="row">
+<section class="section-main section-dark">
+  <div class="container-fluid">
+
+    <div class="row row-limit">
       <div class="col-lg-12">
         <h1>
           Effects of Smoking
         </h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>
-          Graphic Health Warnings
-        </h1>
+        <div class="row">
+          <div class="col-lg-4 col-effects">
+            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat.</p>
+          </div>
+          <div class="col-lg-4 col-effects">
+            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat.</p>
+          </div>
+          <div class="col-lg-4 col-effects">
+            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat.</p>
+          </div>
+        </div>
       </div>
     </div>
 
   </div>
 </section>
 
-<section>
+<section id="ghw" class="section-main section-gradient">
   <div class="container-fluid">
-    <div class="row">
+
+    <div class="row row-limit">
+      <div class="col-lg-12">
+        <h1>
+          Graphic Health Warnings
+        </h1>
+        <div class="row">
+          <div class="col-lg-5">
+            <img class="img-responsive" src="{{ site.baseurl }}/images/lungs-monoline.png">
+          </div>
+          <div class="col-lg-7">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing
+            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing
+            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="partners" class="section-main">
+  <div class="container-fluid">
+    <div class="row row-limit">
       <div class="col-lg-12">
         <h1>
           Partners
         </h1>
+        <!--img>
         <img>
-        <img>
-        <img>
+        <img-->
+        <div class="container-partners">
+          <div class="filler-partners"></div>
+          <div class="filler-partners"></div>
+          <div class="filler-partners"></div>
+          <div class="filler-partners"></div>
+          <div class="filler-partners"></div>
+        </div>
       </div>
     </div>
   </div>
