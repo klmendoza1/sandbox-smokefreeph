@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="top">
 
   <head>
 	<meta charset="utf-8">
@@ -78,7 +78,7 @@
 	<link rel="stylesheet" href="/css/custom.css">
 
 
-    <body>
+    <body  data-spy="scroll" data-target="#km-navbar" >
 
 		<header class=" ">
   <nav id="km-navbar" class="navbar navbar-default navbar-fixed-top">
@@ -91,14 +91,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand">
+        <a class="navbar-brand" href="#top">
           <img class="hidden" src="/images/lungs-monoline.png">
           <span>#SmokeFreePH</span>
         </a>
       </div>
 
       <div class="km-navbar-brand hidden-xs">
-        <a><img src="/images/logo-full.png"></a>
+        <a href="#top"><img src="/images/logo-full.png"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -131,8 +131,18 @@
               erat volutpat.
           </p>
           <div class="text-center">
-            <a class="btn btn-default km-btn km-jumbotron-btn">Stories</a>
+            <a class="btn btn-default km-btn km-jumbotron-btn km-btn-lg" href="#stories">Stories</a>
           </div>
+
+          <a class="a-arrow" href="#stories">
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L30 20 L60 0"></path>
+  						<!--path class="a1" d="M0 0 L30 32 L60 0"></path>
+  						<path class="a2" d="M0 20 L30 52 L60 20"></path>
+  						<path class="a3" d="M0 40 L30 72 L60 40"></path-->
+  					</svg>
+          <a>
+
           <div class="km-jumbotron-margin-bottom"></div>
         </div>
       </div>
@@ -140,7 +150,8 @@
   </section>
 </section>
 
-<section id="stories" class="section-main">
+<section class="section-main section-imagebg" style="background-image:url('/images/bg-white.jpg');">
+  <a class="anchor" id="stories"></a>
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -149,7 +160,7 @@
         </h1>
 
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
             <a class="anchor-stories">
               <div class="panel panel-default panel-stories">
                 <div class="panel-heading">
@@ -164,7 +175,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
             <a class="anchor-stories">
               <div class="panel panel-default panel-stories">
                 <div class="panel-heading">
@@ -179,7 +190,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
             <a class="anchor-stories">
               <div class="panel panel-default panel-stories">
                 <div class="panel-heading">
@@ -193,6 +204,9 @@
                 </div>
               </div>
             </a>
+          </div>
+          <div class="col-lg-12 text-center">
+            <a class="btn btn-default km-btn km-btn-lg">See More</a>
           </div>
         </div>
       </div>
@@ -200,7 +214,8 @@
   </div>
 </section>
 
-<section id="about" class="section-main section-gradient">
+<section class="section-main section-gradient">
+  <a class="anchor" id="about"></a>
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -226,7 +241,8 @@
   </div>
 </section>
 
-<section id="info" class="section-main section-dark">
+<section class="section-main section-dark">
+  <a class="anchor" id="info"></a>
   <div class="container-fluid">
 
     <div class="row row-limit">
@@ -235,31 +251,25 @@
           Smoking in Numbers
         </h1>
         <div class="row">
-          <div class="col-lg-4 col-numbers">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
             <img class="img-responsive img-numbers" src="/images/lungs-monoline.png">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.</p>
+            <p>Smoking kills 10 Filipinos every hour due to cancer, stroke, lung and heart diseases brought on
+              by cigarette smoking. (World Health Organization)</p>
           </div>
-          <div class="col-lg-4 col-numbers">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
             <img class="img-responsive img-numbers" src="/images/lungs-monoline.png">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.</p>
+            <p>Twenty­eight percent or 17.3 million Filipino adults age 15 years and older are current tobacco
+              smokers, according to the results of the 2009 Global Adult Tobacco Survey (GATS).</p>
           </div>
-          <div class="col-lg-4 col-numbers">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
             <img class="img-responsive img-numbers" src="/images/lungs-monoline.png">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.</p>
+            <p>23 percent of Filipino adults are daily tobacco smokers: 38 percent for males and 7 percent for
+              females. (Philippine Statistics Authority)</p>
           </div>
         </div>
       </div>
       <div class="col-lg-12 text-center">
-        <a class="btn btn-default km-btn">See More</a>
+        <a class="btn btn-default km-btn km-btn-lg">See More</a>
       </div>
     </div>
   </div>
@@ -274,38 +284,41 @@
           Effects of Smoking
         </h1>
         <div class="row">
-          <div class="col-lg-4 col-effects">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
             <img class="img-responsive img-effects" src="/images/lungs-monoline.png">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.</p>
+            <h2>Weakened Immune System</h2>
+            <p>Cigarette smoke contains high levels of tar and other chemicals, which can make your immune
+              system less effective at fighting off infections. This means you're more likely to get sick, and are
+              vulnerable to even the common cold and the flu.</p>
           </div>
-          <div class="col-lg-4 col-effects">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
             <img class="img-responsive img-effects" src="/images/lungs-monoline.png">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.</p>
+            <h2>A Chance for Cancer</h2>
+            <p>A single cigarette contains over 4,800 chemicals, 69 of which are known to cause cancer.
+              Smoking gives cancer a chance to take over your body and increases the risks of getting more smoking-
+              related diseases. Over 30% of cancer could be prevented by avoiding tobacco and alcohol, having a
+              healthy diet and physical activity. Don’t give cancer a chance.</p>
           </div>
-          <div class="col-lg-4 col-effects">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
             <img class="img-responsive img-effects" src="/images/lungs-monoline.png">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat.</p>
+            <h2>Issue of the Heart</h2>
+            <p>The chemicals in tobacco smoke harm your blood cells. Smoking raises blood pressure,
+              which increases the risk of stroke. It can also can damage the function of your heart and the
+              structure and function of your blood vessels.  Although nicotine is the main active agent in
+              cigarette smoke, other chemicals and compounds such as tar and carbon monoxide are also
+              harmful to your heart in many ways.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-12 text-center">
-        <a class="btn btn-default km-btn">See More</a>
+        <a class="btn btn-default km-btn km-btn-lg">See More</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<section id="ghw" class="section-main section-gradient">
+<section class="section-main section-imagebg" style="background-image:url('/images/bg-white.jpg');">
   <div class="container-fluid">
 
     <div class="row row-limit">
@@ -374,10 +387,11 @@
 
 		<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
 
 
 
-  <script>
+<script>
   function hasClass(element, cls) {
       return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
   }
@@ -397,7 +411,7 @@
       basis_bcr = basis.getBoundingClientRect();
       navbar_bcr = navbar.getBoundingClientRect();
       //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
-      if (basis_bcr.bottom <= 0) {
+      if (basis_bcr.bottom <= 97) {
         if (!(hasClass(navbar,'navbar-normalize'))) {
         //if (hasClass(navbar,'navbar-hide')) {
           navbar.classList.add('navbar-normalize');
@@ -418,7 +432,7 @@
           didScroll = false;
       }
   }, 100);
-  </script>
+</script>
 
 
 

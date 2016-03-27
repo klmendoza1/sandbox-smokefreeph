@@ -1,9 +1,10 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
 
 {% if page.navHide %}
 
-  <script>
+<script>
   function hasClass(element, cls) {
       return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
   }
@@ -23,7 +24,7 @@
       basis_bcr = basis.getBoundingClientRect();
       navbar_bcr = navbar.getBoundingClientRect();
       //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
-      if (basis_bcr.bottom <= 0) {
+      if (basis_bcr.bottom <= 97) {
         if (!(hasClass(navbar,'navbar-normalize'))) {
         //if (hasClass(navbar,'navbar-hide')) {
           navbar.classList.add('navbar-normalize');
@@ -44,7 +45,7 @@
           didScroll = false;
       }
   }, 100);
-  </script>
+</script>
 
 {% endif %}
 

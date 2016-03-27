@@ -79,13 +79,21 @@
   transition: 250ms ease-out;
 }
 
+
 .navbar.navbar-default .navbar-brand:hover,
-.navbar.navbar-default .navbar-nav>li>a:hover {
+.navbar.navbar-default .navbar-nav>li>a:hover,
+.navbar.navbar-default .navbar-nav>li.active>a {
   color: #a2d4ab;
   -webkit-transition: color 200ms ease-out;
   -moz-transition: color 200ms ease-out;
   -o-transition: color 200ms ease-out;
   transition: color 200ms ease-out;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
 }
 
 .navbar.navbar-default .navbar-toggle {
@@ -136,12 +144,12 @@
 }
 
 .km-jumbotron-margin-top {
-  height: calc((((100vh - 355px) / 2) - 97px) + 40px);
+  height: calc((((100vh - 405px) / 2) - 97px) + 40px);
   min-height: 80px;
 }
 
 .km-jumbotron-margin-bottom {
-  height: calc(((100vh - 355px) / 2) - 40px);
+  height: calc(((100vh - 405px) / 2) - 40px);
   min-height: 80px;
 }
 
@@ -189,7 +197,8 @@
   transition: 250ms ease-out;
 }
 
-.btn.btn-default.km-btn.km-jumbotron-btn {
+
+.btn.btn-default.km-btn.km-btn-lg {
   margin-top: 20px;
   font-size: 1.25em;
   font-weight: 500;
@@ -198,6 +207,9 @@
   padding-left: 16px;
   letter-spacing: 0.5em;
   padding-right: 8px;
+}
+
+.btn.btn-default.km-btn.km-jumbotron-btn {
   color: white;
   border-color: white;
   -webkit-transition: 250ms ease-out;
@@ -216,6 +228,62 @@
   -o-transition: 250ms ease-out;
   transition: 250ms ease-out;
 }
+
+/* Animated SVG Arrows */
+
+.a-arrow {
+  display: block;
+  margin-top: 30px;
+}
+
+.arrows {
+	width: 60px;
+	height: 21px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+}
+
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 2px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+  0% {opacity:0.5}
+  40% {opacity:1}
+  80% {opacity:0.5}
+  100% {opacity:0.5}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+  0% {opacity:0.5}
+  40% {opacity:1}
+  80% {opacity:0.5}
+  100% {opacity:0.5}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/* Jumbotron Sizing */
 
 @media (max-width: 768px) {
   .km-jumbotron, .km-jumbotron-overlay {
@@ -240,6 +308,13 @@
 }
 
 /* SECTIONS */
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -136px;
+  visibility: hidden;
+}
 
 .row-limit {
   max-width: 960px;
@@ -267,6 +342,18 @@
 
 .section-dark {
   background: #5a5050;
+}
+
+.section-imagebg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .section-imagebg {
+    background-size: contain;
+  }
 }
 
 .section-dark+.section-dark {
@@ -340,14 +427,6 @@
 }
 
 .section-dark .btn.btn-default.km-btn {
-  margin-top: 20px;
-  font-size: 1.25em;
-  font-weight: 500;
-  padding-top: 12px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  letter-spacing: 0.5em;
-  padding-right: 8px;
   color: white;
   border-color: white;
   -webkit-transition: 250ms ease-out;
