@@ -81,7 +81,7 @@
     <body>
 
 		<header class=" ">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav id="km-navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -92,7 +92,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand">
-          <img class="visible-xs" src="/images/lungs-monoline.png">
+          <img class="hidden" src="/images/lungs-monoline.png">
           <span>#SmokeFreePH</span>
         </a>
       </div>
@@ -116,7 +116,7 @@
 
 		<section class="page-content">
 
-		<section class="km-jumbotron" style="background-image:url('/images/bg.jpg')">
+		<section id="jumbotron" class="km-jumbotron" style="background-image:url('/images/bg.jpg')">
   <section class="km-jumbotron-overlay">
     <div class="container-fluid">
       <div class="row">
@@ -150,55 +150,51 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <div class="panel panel-default panel-stories">
-              <div class="panel-heading">
-                <img class="img-responsive img-stories" src="/images/filler-stories.jpg">
-                <h3 class="h3-stories">Lorem ipsum dolor</h3>
+            <a class="anchor-stories">
+              <div class="panel panel-default panel-stories">
+                <div class="panel-heading">
+                  <img class="img-responsive img-stories" src="/images/filler-stories.jpg">
+                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
+                </div>
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                    aliquam erat volutpat.</p>
+                </div>
               </div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat.</p>
-              </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-4">
-            <div class="panel panel-default panel-stories">
-              <div class="panel-heading">
-                <img class="img-responsive img-stories" src="/images/filler-stories.jpg">
-                <h3 class="h3-stories">Lorem ipsum dolor</h3>
+            <a class="anchor-stories">
+              <div class="panel panel-default panel-stories">
+                <div class="panel-heading">
+                  <img class="img-responsive img-stories" src="/images/filler-stories.jpg">
+                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
+                </div>
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                    aliquam erat volutpat.</p>
+                </div>
               </div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat.</p>
-              </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-4">
-            <div class="panel panel-default panel-stories">
-              <div class="panel-heading">
-                <img class="img-responsive img-stories" src="/images/filler-stories.jpg">
-                <h3 class="h3-stories">Lorem ipsum dolor</h3>
+            <a class="anchor-stories">
+              <div class="panel panel-default panel-stories">
+                <div class="panel-heading">
+                  <img class="img-responsive img-stories" src="/images/filler-stories.jpg">
+                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
+                </div>
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                    aliquam erat volutpat.</p>
+                </div>
               </div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat.</p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
-
-        <img>
-        <p>
-          Live life. There's more to life than the stick you light.
-        </p>
-        <p>
-          Some copy about how smoking affects life. Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam erat volutpat. Emotional.
-        </p>
       </div>
     </div>
   </div>
@@ -212,14 +208,19 @@
           The Campaign
         </h1>
         <img class="img-logo img-responsive" src="/images/logo-full.png">
-        <p>
-          Sometimes, quitting is the best way to win.
-        </p>
-        <p>
-          Walang Wagi Sa Yosi is lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam erat volutpat. Emotional.
-        </p>
+
+        <div class="row row-limit-p">
+          <div class="col-lg-12">
+            <p class="p-em">
+              Sometimes, quitting is the best way to win.
+            </p>
+            <p>
+              Walang Wagi Sa Yosi is lorem ipsum dolor sit
+              amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+              tincidunt ut laoreet dolore magna aliquam erat volutpat. Emotional.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -257,6 +258,9 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-12 text-center">
+        <a class="btn btn-default km-btn">See More</a>
+      </div>
     </div>
   </div>
 </section>
@@ -292,6 +296,9 @@
             erat volutpat.</p>
           </div>
         </div>
+      </div>
+      <div class="col-lg-12 text-center">
+        <a class="btn btn-default km-btn">See More</a>
       </div>
     </div>
 
@@ -329,7 +336,7 @@
   </div>
 </section>
 
-<section id="partners" class="section-main">
+<section id="partners" class="section-main hidden">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -367,6 +374,60 @@
 
 		<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+  function hasClass(element, cls) {
+      return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+  }
+
+  /* NAVIGATION HEADER*/
+
+  var didScroll = false;
+
+  var basis = document.getElementById('jumbotron');
+  var basis_bcr = basis.getBoundingClientRect();
+  var navbar = document.getElementById('km-navbar');
+  var navbar_bcr = navbar.getBoundingClientRect();
+  window.onscroll = doOnScroll;
+
+  function doOnScroll() {
+      didScroll = true;
+      basis_bcr = basis.getBoundingClientRect();
+      navbar_bcr = navbar.getBoundingClientRect();
+      //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+      if (basis_bcr.bottom <= 0) {
+        if (!(hasClass(navbar,'navbar-normalize'))) {
+        //if (hasClass(navbar,'navbar-hide')) {
+          navbar.classList.add('navbar-normalize');
+          //navbar.classList.remove('navbar-hide');
+        }
+      }
+      else {
+        if ((hasClass(navbar,'navbar-normalize')) && (basis.getBoundingClientRect().top == 0)) {
+        // if ((!(hasClass(navbar,'navbar-hide'))) && (basis.getBoundingClientRect().top == 0)) {
+          navbar.classList.remove('navbar-normalize');
+          //navbar.classList.add('navbar-hide');
+        }
+      }
+  }
+
+  setInterval(function() {
+      if(didScroll) {
+          didScroll = false;
+      }
+  }, 100);
+  </script>
+
+
+
+
+
+
+  <!--script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script-->
+
 
 
 	</body>
