@@ -4,6 +4,10 @@
 }
 */
 
+.body-allocate-top {
+  margin-top: 97px;
+}
+
 /* NAVBAR */
 
 .navbar.navbar-default {
@@ -54,7 +58,7 @@
   height: initial;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 992px) {
   .navbar.navbar-default .navbar-brand img {
     display: inline-block !important;
     width: 50px;
@@ -586,7 +590,10 @@ a.anchor#content {
 
 .col-numbers img,
 .col-numbers .img-numbers,
-.img-numbers {
+.img-numbers,
+.col-effects img,
+.col-effects .img-numbers,
+.img-effects {
   width: 100%;
   max-width: 210px;
   display: block;
@@ -594,8 +601,24 @@ a.anchor#content {
   margin-bottom: 20px;
 }
 
-.col-numbers h2 {
+.col-numbers h2,
+.col-effects h2 {
   text-align: center;
+}
+
+.col-numbers p,
+.col-effects p {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .col-numbers p,
+  .col-effects p {
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
 }
 
 .section-dark .btn.btn-default.km-btn {
@@ -660,4 +683,83 @@ footer .text-center {
 
 footer .text-center {
   color: white;
+}
+
+/* STORY */
+.story-cover {
+  background-size: cover;
+  background-position: center top;
+}
+
+.story-cover-overlay {
+  background-color: rgba(62, 172, 168, 0.75);
+}
+
+.story-cover-title {
+  font-size: 5em;
+  font-weight: 500;
+  color: #e5eec1;
+  line-height: 1em;
+  max-width: 680px;
+}
+
+.story-cover-subtext {
+  color: white;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: center;
+  max-width: 640px;
+}
+
+.story-cover-title, .story-cover-subtext {
+  text-align: center;
+  margin: auto;
+}
+
+.section-story .row-limit {
+  max-width: 800px;
+  padding-top: 100px;
+}
+
+.section-story p {
+  font-size: 1.25em;
+  font-weight: 100;
+  line-height: 2em;
+  margin-bottom: 30px;
+}
+
+.section-landing h1 {
+  margin-top: 60px;
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #5A5050;
+  color: #3EACA8;
+}
+
+@media (max-width: 768px) {
+  .section-landing h1 {
+    font-size: 3.5em;
+  }
+}
+
+.visible-xxs {
+  display: none;
+}
+
+@media (max-width: 435px) {
+
+  .visible-xxs {
+    display: inline;
+  }
+}
+
+.section-landing .subtext {
+  margin-bottom: 60px;
+  max-width: 540px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #494343;
 }
