@@ -1,3 +1,9 @@
+/*
+.body-allocate-bottom {
+  margin-bottom: 70px;
+}
+*/
+
 /* NAVBAR */
 
 .navbar.navbar-default {
@@ -23,10 +29,20 @@
 .navbar.navbar-default .navbar-nav>li>a {
   color: white;
   cursor: pointer;
-  -webkit-transition: color 200ms ease-out;
-  -moz-transition: color 200ms ease-out;
-  -o-transition: color 200ms ease-out;
-  transition: color 200ms ease-out;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #494343;
+}
+
+.navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .navbar.navbar-default .navbar-brand {
@@ -38,10 +54,65 @@
   height: initial;
 }
 
+@media (max-width: 922px) {
+  .navbar.navbar-default .navbar-brand img {
+    display: inline-block !important;
+    width: 50px;
+  }
+  .navbar.navbar-default .navbar-brand {
+    font-size: 1.5em;
+    padding-top: 24px;
+    padding-bottom: 27px;
+  }
+  .navbar.navbar-default .navbar-brand span {
+    margin-left: 10px;
+    vertical-align: sub;
+  }
+}
+
 .navbar.navbar-default .navbar-nav>li>a {
   text-transform: uppercase;
   padding-top: 40px;
   padding-bottom: 37px;
+}
+
+@media (max-width: 768px) {
+  .navbar.navbar-default .navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 17px;
+  }
+}
+
+.navbar.navbar-default .navbar-nav>li>a.btn-subscribe {
+  color: #a2d4ab;
+  background-color: #494343;
+  border-color: #494343;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar.navbar-default .navbar-nav>li>a.btn-subscribe:hover,
+.navbar.navbar-default .navbar-nav>li>a.btn-subscribe:active,
+.navbar.navbar-default .navbar-nav>li>a.btn-subscribe:focus {
+  color: #494343;
+  background-color: #a2d4ab;
+  border-color: #a2d4ab;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+@media (min-width: 768px) {
+  .navbar.navbar-default .navbar-nav>li>a.btn-subscribe {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-left: 10px;
+  }
 }
 
 .km-navbar-brand a {
@@ -84,10 +155,10 @@
 .navbar.navbar-default .navbar-nav>li>a:hover,
 .navbar.navbar-default .navbar-nav>li.active>a {
   color: #a2d4ab;
-  -webkit-transition: color 200ms ease-out;
-  -moz-transition: color 200ms ease-out;
-  -o-transition: color 200ms ease-out;
-  transition: color 200ms ease-out;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -101,6 +172,11 @@
   border-style: none;
   padding-right: 0;
   margin-right: 0;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
 }
 
 .navbar-toggle .icon-bar {
@@ -316,6 +392,10 @@ a.anchor {
   visibility: hidden;
 }
 
+a.anchor#content {
+  top: -97px;
+}
+
 .row-limit {
   max-width: 960px;
   margin: auto;
@@ -341,7 +421,8 @@ a.anchor {
 }
 
 .section-dark {
-  background: #5a5050;
+  /*background: #5a5050;*/
+  background-color: #494343;
 }
 
 .section-imagebg {
@@ -370,12 +451,36 @@ a.anchor {
 }
 
 /* STORIES Section */
-.panel-stories {
+.anchor-stories,
+.anchor-stories * {
+  text-decoration: none !important;
+}
 
+.panel-stories {
+  max-width: 360px;
+  box-shadow: 0 0 40px rgba(51, 51, 51, 0.20);
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.anchor-stories:hover .panel-stories,
+.anchor-stories:active .panel-stories,
+.anchor-stories:focus .panel-stories {
+  box-shadow: 0 0 40px rgba( 62, 172, 168, 0 );
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
 }
 
 .panel-stories .panel-heading {
   padding: 0;
+  background-color: #3eaca8;
+  border-color: transparent;
 }
 
 .panel-stories .panel-heading img,
@@ -387,12 +492,78 @@ a.anchor {
 .panel-stories .panel-heading h3,
 .panel-stories .panel-heading .h3-stories,
 .h3-stories {
-  margin: 15px;
+  margin: 15px 15px 0 15px;
+  color: #e5ebc0;
+}
+
+.panel-stories .panel-body {
+  height: 120px;
+  padding: 5px 15px 15px 15px;
+  overflow: hidden;
+  background-color: #3eaca6;
+}
+
+.panel-stories .panel-body::before {
+  background-image: linear-gradient( top, rgba( 62, 172, 168, 0 ) 75%, rgba( 62, 172, 168, 1 ) 100% );
+  background-image: -moz-linear-gradient( top, rgba( 62, 172, 168, 0 ) 75%, rgba( 62, 172, 168, 1 ) 100% );
+  background-image: -ms-linear-gradient( top, rgba( 62, 172, 168, 0 ) 75%, rgba( 62, 172, 168, 1 ) 100% );
+  background-image: -o-linear-gradient( top, rgba( 62, 172, 168, 0 ) 75%, rgba( 62, 172, 168, 1 ) 100% );
+  background-image: -webkit-linear-gradient( top, rgba( 62, 172, 168, 0 ) 75%, rgba( 62, 172, 168, 1 ) 100% );
+  content: "\00a0";
+  height: 120px;
+  margin-top: -5px;
+  position: absolute;
+  width: calc(100% - 32px);
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media(max-width: 768px) {
+  .panel-stories .panel-body::before {
+    max-width: 358px;
+  }
 }
 
 .panel-stories .panel-body p {
   margin-bottom: 0;
+  color: white !important;
 }
+
+.panel-stories .panel-footer {
+  background-color: #3eaca6;
+  border-color: transparent;
+}
+
+
+
+.panel-stories .panel-footer button.btn.btn-default.km-btn {
+  font-weight: 500;
+  color: white !important;
+  background-color: transparent !important;
+  /*
+  border-color: white;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+  */
+  border-color: transparent !important;
+  text-align: right;
+}
+
+/*
+.panel-stories .panel-footer button.btn.btn-default.km-btn:hover,
+.panel-stories .panel-footer button.btn.btn-default.km-btn:active,
+.panel-stories .panel-footer button.btn.btn-default.km-btn:focus {
+  color: #3eaaa6;
+  background-color: white;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+*/
+
 
 /* CAMPAIGN Section */
 
@@ -420,6 +591,7 @@ a.anchor {
   max-width: 210px;
   display: block;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .col-numbers h2 {

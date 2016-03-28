@@ -75,13 +75,16 @@
 }
 </style>
 
+	<link rel="stylesheet" href="/css/slick.css">
 	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="/css/custom-slick.css">
+	<link rel="stylesheet" href="/css/custom-subscription.css">
 
 
-    <body  data-spy="scroll" data-target="#km-navbar" >
+    <body  class="body-allocate-bottom" data-spy="scroll" data-target="#km-navbar" >
 
-		<header class=" ">
-  <nav id="km-navbar" class="navbar navbar-default navbar-fixed-top">
+		<header class="">
+  <nav id="km-navbar" class="navbar navbar-default navbar-fixed-top  ">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -92,12 +95,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#top">
-          <img class="hidden" src="/images/lungs-monoline.png">
+          <img class="visible-xs img-brand" src="/images/lungs-monoline.png" >
           <span>#SmokeFreePH</span>
         </a>
       </div>
 
-      <div class="km-navbar-brand hidden-xs">
+      <div class="km-navbar-brand hidden-sm hidden-xs">
         <a href="#top"><img src="/images/logo-full.png"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -106,6 +109,7 @@
           <li><a href="#stories">Stories</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#info">Info</a></li>
+          <li><a class="btn btn-default btn-subscribe km-btn" target="_blank" href="http://eepurl.com/bVGXOj">Subscribe</a></li>
           <li class="hidden"><a href="#social">Social</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -134,7 +138,7 @@
             <a class="btn btn-default km-btn km-jumbotron-btn km-btn-lg" href="#stories">Stories</a>
           </div>
 
-          <a class="a-arrow" href="#stories">
+          <a class="a-arrow" href="#content">
             <svg class="arrows">
               <path class="a1" d="M0 0 L30 20 L60 0"></path>
   						<!--path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -150,6 +154,8 @@
   </section>
 </section>
 
+<section>
+  <a class="anchor" id="content"></a>
 <section class="section-main section-imagebg" style="background-image:url('/images/bg-white.jpg');">
   <a class="anchor" id="stories"></a>
   <div class="container-fluid">
@@ -172,6 +178,7 @@
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     aliquam erat volutpat.</p>
                 </div>
+                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
               </div>
             </a>
           </div>
@@ -187,6 +194,7 @@
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     aliquam erat volutpat.</p>
                 </div>
+                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
               </div>
             </a>
           </div>
@@ -202,13 +210,14 @@
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     aliquam erat volutpat.</p>
                 </div>
+                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-12 text-center">
-            <a class="btn btn-default km-btn km-btn-lg">See More</a>
           </div>
         </div>
+      </div>
+      <div class="col-lg-12 text-center">
+        <a class="btn btn-default km-btn km-btn-lg">All Stories</a>
       </div>
     </div>
   </div>
@@ -327,20 +336,39 @@
           Graphic Health Warnings
         </h1>
         <div class="row">
-          <div class="col-lg-5">
-            <img class="img-responsive" src="/images/lungs-monoline.png">
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <div class="slick-ghw-for">
+              <div><img class="img-responsive" src="/images/lungs-monoline.png"></div>
+              <div><img class="img-responsive" src="/images/logo-full.png"></div>
+              <div><img class="img-responsive" src="/images/lungs-monoline.png"></div>
+            </div>
           </div>
-          <div class="col-lg-7">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing
-            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna aliquam erat volutpat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing
-            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna aliquam erat volutpat.</p>
+          <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <section class="hidden-xs" id="section-copy-source">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing
+              elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              magna aliquam erat volutpat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing
+              elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              magna aliquam erat volutpat.</p>
+            </section>
+            <div class="slick-ghw-nav">
+              <div><img class="img-responsive" src="/images/lungs-monoline.png"></div>
+              <div><img class="img-responsive" src="/images/logo-full.png"></div>
+              <div><img class="img-responsive" src="/images/lungs-monoline.png"></div>
+            </div>
+            <section class="visible-xs" id="section-copy-destination"></section>
+
+            <script>
+              var firstDivContent = document.getElementById('section-copy-source');
+              var secondDivContent = document.getElementById('section-copy-destination');
+              secondDivContent.innerHTML = firstDivContent.innerHTML;
+            </script>
+
           </div>
         </div>
       </div>
@@ -370,6 +398,7 @@
     </div>
   </div>
 </section>
+</section>
 
 
 		</section>
@@ -385,9 +414,84 @@
 </footer>
 
 
+
+<!--
+<div id="mc_embed_signup">
+  <form action="//smokefree.us12.list-manage.com/subscribe/post?u=16755c71e8f4796a87827e0f6&amp;id=f1abc02894" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+          	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+      	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_16755c71e8f4796a87827e0f6_f1abc02894" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default km-btn"></div>
+    </div>
+  </form>
+</div>
+-->
+
+
+<!--End mc_embed_signup-->
+
+
 		<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/smoothscroll.js"></script>
+
+
+  <script type="text/javascript" src="/js/slick.min.js"></script>
+  
+    <script>
+      $(document).ready(function(){
+        $('.slick-ghw-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear',
+          asNavFor: '.slick-ghw-nav'
+        });
+        $('.slick-ghw-nav').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          asNavFor: '.slick-ghw-for',
+          dots: false,
+          centerMode: false,
+          focusOnSelect: true,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      });
+    </script>
+  
+
 
 
 

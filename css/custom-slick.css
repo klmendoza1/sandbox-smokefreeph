@@ -1,0 +1,17 @@
+.slick-ghw-for, .slick-ghw-nav {
+
+}
+
+@media (max-width: 768px) {
+  .slick-ghw-for, .slick-ghw-nav {
+    margin-bottom: 30px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.slick-ghw-nav .slick-slide {
+  padding-left: 15px;
+  padding-right: 15px;
+}
