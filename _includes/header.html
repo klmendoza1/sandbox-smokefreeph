@@ -21,9 +21,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#stories">Stories</a></li>
+          <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% else %}{{ '#' }}{% endif %}stories">Stories</a></li>
           <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#about">About</a></li>
-          <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#info">Info</a></li>
+          <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% else %}{{ '#' }}{% endif %}info">Info</a></li>
           <li><a class="btn btn-default btn-subscribe km-btn" target="_blank" href="http://eepurl.com/bVGXOj">Subscribe</a></li>
           <li class="hidden"><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#social">Social</a></li>
         </ul>
