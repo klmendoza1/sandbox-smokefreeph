@@ -1,8 +1,8 @@
 # Site settings
 title: Walang Wagi Sa Yosi | SmokeFree.PH
 baseurl: http://toffmendoza.me/sandbox-smokefreeph
+# baseurl: http://smokefree.ph
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-# baseurl:

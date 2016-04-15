@@ -23,10 +23,10 @@ animate: true
               erat volutpat.
           </p>
           <div class="text-center">
-            <a class="btn btn-default km-btn km-jumbotron-btn km-btn-lg" href="{{ site.baseurl }}#stories">Stories</a>
+            <a class="btn btn-default km-btn km-jumbotron-btn km-btn-lg" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#stories">Stories</a>
           </div>
 
-          <a class="a-arrow" href="{{ site.baseurl }}#content">
+          <a class="a-arrow" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#content">
             <svg class="arrows">
               <path class="a1" d="M0 0 L30 20 L60 0"></path>
   						<!--path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -199,17 +199,17 @@ animate: true
         </h1>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/01.png">
             <p>Smoking kills 10 Filipinos every hour due to cancer, stroke, lung and heart diseases brought on
               by cigarette smoking. (World Health Organization)</p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/02.png">
             <p>Twenty­-eight percent or 17.3 million Filipino adults age 15 years and older are current tobacco
               smokers, according to the results of the 2009 Global Adult Tobacco Survey (GATS).</p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers hidden-xs">
-            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/04.png">
             <p>23 percent of Filipino adults are daily tobacco smokers: 38 percent for males and 7 percent for
               females. (Philippine Statistics Authority)</p>
           </div>
