@@ -9,14 +9,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% else %}{{ '/#top' }}{% endif %}">
+        <a class="navbar-brand" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% else %}{{ site.baseurl }}{{ '/#top' }}{% endif %}">
           <img class="visible-xs img-brand" src="{{ site.baseurl }}/images/lungs-monoline.png" >
           <span>#SmokeFreePH</span>
         </a>
       </div>
 
       <div class="km-navbar-brand hidden-sm hidden-xs">
-        <a href="{{ site.baseurl }}#top"><img src="{{ site.baseurl }}/images/logo-full.png"></a>
+        <a  href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% else %}{{ site.baseurl }}{{ '/#top' }}{% endif %}"><img src="{{ site.baseurl }}/images/logo-full.png"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
