@@ -55,102 +55,24 @@ animate: true
 
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-            <a class="anchor-stories" href="{{ site.baseurl }}/story">
-              <div class="panel panel-default panel-stories">
-                <div class="panel-heading">
-                  <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
-                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat.</p>
-                </div>
-                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
-              </div>
-            </a>
+            {% include panel-story.html %}
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-            <a class="anchor-stories" href="{{ site.baseurl }}/story">
-              <div class="panel panel-default panel-stories">
-                <div class="panel-heading">
-                  <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
-                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat.</p>
-                </div>
-                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
-              </div>
-            </a>
+            {% include panel-story.html %}
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-            <a class="anchor-stories" href="{{ site.baseurl }}/story">
-              <div class="panel panel-default panel-stories">
-                <div class="panel-heading">
-                  <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
-                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat.</p>
-                </div>
-                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
-              </div>
-            </a>
+            {% include panel-story.html %}
           </div>
         </div>
         <div class="row hidden-xs" style="margin-top:10px;" >
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-            <a class="anchor-stories" href="{{ site.baseurl }}/story">
-              <div class="panel panel-default panel-stories">
-                <div class="panel-heading">
-                  <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
-                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat.</p>
-                </div>
-                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
-              </div>
-            </a>
+            {% include panel-story.html %}
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-            <a class="anchor-stories" href="{{ site.baseurl }}/story">
-              <div class="panel panel-default panel-stories">
-                <div class="panel-heading">
-                  <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
-                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat.</p>
-                </div>
-                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
-              </div>
-            </a>
+            {% include panel-story.html %}
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-            <a class="anchor-stories" href="{{ site.baseurl }}/story">
-              <div class="panel panel-default panel-stories">
-                <div class="panel-heading">
-                  <img class="img-responsive img-stories" src="{{ site.baseurl }}/images/filler-stories.jpg">
-                  <h3 class="h3-stories">Lorem ipsum dolor</h3>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat.</p>
-                </div>
-                <div class="panel-footer"><button class="btn btn-default km-btn btn-block">Read More &gt;</button></div>
-              </div>
-            </a>
+            {% include panel-story.html %}
           </div>
         </div>
       </div>
@@ -216,7 +138,7 @@ animate: true
         </div>
       </div>
       <div class="col-lg-12 text-center">
-        <a class="btn btn-default km-btn km-btn-lg">See More</a>
+        <a href="{{ site.baseurl }}/info" class="btn btn-default km-btn km-btn-lg">See More</a>
       </div>
     </div>
   </div>
@@ -232,14 +154,14 @@ animate: true
         </h1>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
-            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/effects/06.png">
             <h2>Weakened Immune System</h2>
             <p>Cigarette smoke contains high levels of tar and other chemicals, which can make your immune
               system less effective at fighting off infections. This means you're more likely to get sick, and are
               vulnerable to even the common cold and the flu.</p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
-            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/effects/07.png">
             <h2>A Chance for Cancer</h2>
             <p>A single cigarette contains over 4,800 chemicals, 69 of which are known to cause cancer.
               Smoking gives cancer a chance to take over your body and increases the risks of getting more smoking-
@@ -247,7 +169,7 @@ animate: true
               healthy diet and physical activity. Don’t give cancer a chance.</p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects hidden-xs">
-            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/lungs-monoline.png">
+            <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/effects/08.png">
             <h2>Issue of the Heart</h2>
             <p>The chemicals in tobacco smoke harm your blood cells. Smoking raises blood pressure,
               which increases the risk of stroke. It can also can damage the function of your heart and the
@@ -258,7 +180,7 @@ animate: true
         </div>
       </div>
       <div class="col-lg-12 text-center">
-        <a class="btn btn-default km-btn km-btn-lg">See More</a>
+        <a href="{{ site.baseurl }}/info" class="btn btn-default km-btn km-btn-lg">See More</a>
       </div>
     </div>
 
