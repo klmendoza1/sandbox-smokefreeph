@@ -606,8 +606,21 @@ a.anchor#content {
   text-align: center;
 }
 
-.col-numbers p,
-.col-effects p {
+.col-numbers a,
+.col-effects a {
+  text-decoration: underline;
+  font-size: 0.75em;
+  font-style: italic;
+  color: #E4EDC0;
+}
+
+.col-numbers a.a-inline,
+.col-effects a.a-inline {
+  font-size: 1em;
+}
+
+.col-numbers .div-numbers,
+.col-effects .div-effects {
   margin-bottom: 40px;
 }
 
