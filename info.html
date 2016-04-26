@@ -4,6 +4,80 @@ title: Infographics
 allocateTop: true
 animate: true
 
+numbers:
+ - part1: 'Smoking kills 10 Filipinos every hour due to cancer, stroke, lung and
+      heart diseases brought on by cigarette smoking.'
+   href: http://newsinfo.inquirer.net/61111/smoking-kills-10-filipinos-every-hour#ixzz42lUCEocR
+   hrefContent: 'World Health Organization'
+ - part1: 'Twenty­-eight percent or 17.3 million Filipino adults age 15 years and
+      older are current tobacco smokers, according to the results of the 2009 '
+   href: https://psa.gov.ph/content/173-million-filipino-adults-are-current-tobacco-smokers-final-results-2009-global-adult
+   hrefContent: 'Global Adult Tobacco Survey (GATS)'
+   part2: '.'
+ - part1: 'Filipinos mainly smoke cigarettes, which include manufactured cigarettes
+      and hand­rolled cigarettes. Cigarettes are smoked by 47 percent of men and
+      by 9 percent of women. On the average, male daily smokers consume 11 cigarettes
+      per day while female daily smokers consume 7 cigarettes per day.'
+   href: https://psa.gov.ph/content/173-million-filipino-adults-are-current-tobacco-smokers-final-results-2009-global-adult
+   hrefContent: 'Philippine Statistics Authority'
+ - part1: '23 percent of Filipino adults are daily tobacco smokers: 38 percent for
+       males and 7 percent for females.'
+   href: https://psa.gov.ph/content/173-million-filipino-adults-are-current-tobacco-smokers-final-results-2009-global-adult
+   hrefContent: 'Philippine Statistics Authority'
+ - part1: 'According to the '
+   href: http://www.manilatimes.net/smoking-in-ph-to-remain-high-as-youth-users-replace-adults/162168/
+   hrefContent: 'Global Youth Tobacco Survey (GYTS)'
+   part2: ', more than one in four Filipino children aged 13­15 are smokers. Among
+      those in this age group who smoke, 17.5 percent are girls and 28.3 percent
+      are boys.'
+ - part1: 'It is estimated that 55 percent of Filipino youth are exposed to secondhand
+      smoke at home while 65 percent get it in public places.'
+   href: http://www.manilatimes.net/smoking-in-ph-to-remain-high-as-youth-users-replace-adults/162168/
+ - part1: 'The Philippines is the second largest tobacco consumer in the ASEAN next
+      to Indonesia with 17.3 million Filipino adults smoking. It is believed that
+      majority of them have started the vice at a young age.'
+   href: http://www.manilatimes.net/smoking-in-ph-to-remain-high-as-youth-users-replace-adults/162168/
+   hrefContent: New Vois Association of the Philippines (NVAP)
+ - part1: 'Every year more than 71850 Filipinos are killed by a tobacco­caused disease,
+      while more than 505600 children and more than 15570000 adults continue to
+      use tobacco each day.'
+   href: http://www.tobaccoatlas.org/country-data/philippines/
+   hrefContent: Tobacco Atlas
+ - part1: 'The combined revenues of the world’s 6 largest tobacco companies in
+      2013 was USD342 Billion, 6% larger than the Gross National Income of the
+      Philippines.'
+   href: http://www.tobaccoatlas.org/country-data/philippines/
+   hrefContent: 'Tobacco Atlas'
+
+effects:
+ - header: 'Weakened Immune System'
+   part1: Cigarette smoke contains high levels of tar and other chemicals, which
+      can make your immune system less effective at fighting off infections. This
+      means you're more likely to get sick, and are vulnerable to even the common
+      cold and the flu.
+ - header: A Chance for Cancer
+   part1: A single cigarette contains over 4,800 chemicals, 69 of which are known
+      to cause cancer. Smoking gives cancer a chance to take over your body and
+      increases the risks of getting more smoking- related diseases. Over 30% of
+      cancer could be prevented by avoiding tobacco and alcohol, having a healthy
+      diet and physical activity. Don’t give cancer a chance.
+ - header: 'Issue of the Heart'
+   part1: 'The chemicals in tobacco smoke harm your blood cells. Smoking raises
+      blood pressure, which increases the risk of stroke. It can also can damage
+      the function of your heart and the structure and function of your blood
+      vessels.  Although nicotine is the main active agent in cigarette smoke,
+      other chemicals and compounds such as tar and carbon monoxide are also
+      harmful to your heart in many ways.'
+ - header: 'Less Life to Live'
+   part1: 'Every cigarette you smoke reduces your expected lifespan by 11 minutes.
+      On average, smokers die 10 years earlier than non­smokers. For every person
+      who dies because of smoking, at least 30 people live with a serious smoking­-related
+      illness. There’s more to life than the stick you light.'
+ - header: 'Lorem Ipsum'
+   part1: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat.'
 ---
 
 <section class="section-landing">
@@ -31,101 +105,23 @@ animate: true
         <h1>
           Smoking in Numbers
         </h1>
-        <!-- Row 1 -->
+
+        {% for number in page.numbers %}
+        {% assign modulo = forloop.index | modulo: 3 %}
+        {% assign remain = forloop.length | minus: forloop.index %}
+        {% if modulo == 1 %}
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/01.png">
-              <p>Smoking kills 10 Filipinos every hour due to cancer, stroke, lung and heart diseases brought on
-                by cigarette smoking.
-                <a href="http://newsinfo.inquirer.net/61111/smoking-kills-10-filipinos-every-hour#ixzz42lUCEocR">World Health Organization<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>
-              </p>
-            </div>
+        {% endif %}
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12{% if modulo == 1 and remain == 1%} col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0{% endif %} col-numbers">
+            {% include item-number.html %}
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/02.png">
-              <p>Twenty­-eight percent or 17.3 million Filipino adults age 15 years and older are current tobacco
-                smokers, according to the results of the 2009
-                <a href="https://psa.gov.ph/content/173-million-filipino-adults-are-current-tobacco-smokers-final-results-2009-global-adult">Global Adult Tobacco Survey (GATS)<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers hidden-xs">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/03.png">
-              <p>Filipinos mainly smoke cigarettes, which include manufactured cigarettes and hand­rolled
-                cigarettes. Cigarettes are smoked by 47 percent of men and by 9 percent of women. On the
-                average, male daily smokers consume 11 cigarettes per day while female daily smokers
-                consume 7 cigarettes per day.
-                <a href="https://psa.gov.ph/content/173-million-filipino-adults-are-current-tobacco-smokers-final-results-2009-global-adult">Philippine Statistics Authority<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>
-              </p>
-            </div>
-          </div>
+        {% if modulo == 0 %}
         </div>
-        <!-- Row 2 -->
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/04.png">
-              <p>23 percent of Filipino adults are daily tobacco smokers: 38 percent for males and 7 percent for
-                females.
-                <a href="https://psa.gov.ph/content/173-million-filipino-adults-are-current-tobacco-smokers-final-results-2009-global-adult">Philippine Statistics Authority<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/05.png">
-              <p>According to the
-                <a class="a-inline" href="http://www.manilatimes.net/smoking-in-ph-to-remain-high-as-youth-users-replace-adults/162168/">Global Youth Tobacco Survey (GYTS)<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>,
-                more than one in four Filipino children aged
-                13­15 are smokers. Among those in this age group who smoke, 17.5 percent are girls and 28.3
-                percent are boys.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers hidden-xs">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/06.png">
-              <p>It is estimated that 55 percent of Filipino youth are exposed to secondhand smoke at home while 65
-                percent get it in public places.
-                <a href="http://www.manilatimes.net/smoking-in-ph-to-remain-high-as-youth-users-replace-adults/162168/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-              </p>
-            </div>
-          </div>
+        {% endif %}
+        {% endfor %}
+        {% if modulo != 0 %}
         </div>
-        <!-- Row 3 -->
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/07.png">
-              <p>The Philippines is the second largest tobacco consumer in the ASEAN next to Indonesia with 17.3
-                million Filipino adults smoking. It is believed that majority of them have started the vice at a young
-                age.
-                <a href="http://www.manilatimes.net/smoking-in-ph-to-remain-high-as-youth-users-replace-adults/162168/">New Vois Association of the Philippines or NVAP<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/08.png">
-              <p>Every year more than 71850 Filipinos are killed by a tobacco­caused disease, while more than
-                505600 children and more than 15570000 adults continue to use tobacco each day.
-                <a href="http://www.tobaccoatlas.org/country-data/philippines/">Tobacco Atlas<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-numbers hidden-xs">
-            <div class="div-numbers">
-              <img class="img-responsive img-numbers" src="{{ site.baseurl }}/images/numbers/09.png">
-              <p>The combined revenues of the world’s 6 largest tobacco companies in 2013 was USD342 Billion, 6%
-                larger than the Gross National Income of the Philippines.
-                <a href="http://www.tobaccoatlas.org/country-data/philippines/">Tobacco Atlas<i class="fa fa-external-link hidden" aria-hidden="true"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
+        {% endif %}
 
       </div>
     </div>
@@ -139,67 +135,24 @@ animate: true
         <h1>
           Effects of Smoking
         </h1>
-        <!-- Row 1 -->
+
+        {% for effect in page.effects %}
+        {% assign modulo = forloop.index | modulo: 3 %}
+        {% assign remain = forloop.length | minus: forloop.index %}
+        {% if modulo == 1 %}
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
-            <div class="div-effects">
-              <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/effects/06.png">
-              <h2>Weakened Immune System</h2>
-              <p>Cigarette smoke contains high levels of tar and other chemicals, which can make your immune
-                system less effective at fighting off infections. This means you're more likely to get sick, and are
-                vulnerable to even the common cold and the flu.</p>
-            </div>
+        {% endif %}
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12{% if modulo == 1 and remain == 1%} col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0{% endif %} col-effects">
+            {% include item-effect.html %}
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
-            <div class="div-effects">
-              <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/effects/07.png">
-              <h2>A Chance for Cancer</h2>
-              <p>A single cigarette contains over 4,800 chemicals, 69 of which are known to cause cancer.
-                Smoking gives cancer a chance to take over your body and increases the risks of getting more smoking-
-                related diseases. Over 30% of cancer could be prevented by avoiding tobacco and alcohol, having a
-                healthy diet and physical activity. Don’t give cancer a chance.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
-            <div class="div-effects">
-              <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/lungs-monoline.png">
-              <h2>Issue of the Heart</h2>
-              <p>The chemicals in tobacco smoke harm your blood cells. Smoking raises blood pressure,
-                which increases the risk of stroke. It can also can damage the function of your heart and the
-                structure and function of your blood vessels.  Although nicotine is the main active agent in
-                cigarette smoke, other chemicals and compounds such as tar and carbon monoxide are also
-                harmful to your heart in many ways.</p>
-            </div>
-          </div>
+        {% if modulo == 0 %}
         </div>
-
-        <!-- Row 2 -->
-        <div class="row">
-          <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-12 col-xs-offset-0 col-effects">
-            <div class="div-effects">
-              <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/effects/09.png">
-              <h2>Less Life to Live</h2>
-              <p>Every cigarette you smoke reduces your expected lifespan by 11 minutes. On average, smokers
-                die 10 years earlier than non­smokers. For every person who dies because of smoking, at least 30 people
-                live with a serious smoking­related illness. There’s more to life than the stick you light.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-effects">
-            <div class="div-effects">
-              <img class="img-responsive img-effects" src="{{ site.baseurl }}/images/effects/10.png">
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat.
-              </p>
-            </div>
-          </div>
+        {% endif %}
+        {% endfor %}
+        {% if modulo != 0 %}
         </div>
+        {% endif %}
+
 
       </div>
     </div>

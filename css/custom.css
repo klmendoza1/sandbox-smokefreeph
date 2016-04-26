@@ -606,6 +606,11 @@ a.anchor#content {
   text-align: center;
 }
 
+.col-numbers p,
+.col-effects p {
+  line-height: 1.8em;
+}
+
 .col-numbers a,
 .col-effects a {
   text-decoration: underline;
@@ -616,11 +621,12 @@ a.anchor#content {
 
 .col-numbers a.a-inline,
 .col-effects a.a-inline {
+  font-style: normal;
   font-size: 1em;
 }
 
-.col-numbers .div-numbers,
-.col-effects .div-effects {
+.col-numbers .div-number,
+.col-effects .div-effect {
   margin-bottom: 40px;
 }
 

@@ -1,0 +1,9 @@
+<div class="div-effect">
+  {% assign offset = forloop.index | plus: 5 %}
+
+  <img class="img-responsive img-effects wow fadeInDown {% if modulo == 2 %} delay-200{% elsif modulo == 0 %} delay-400{% endif %}" src="{{ site.baseurl }}/images/effects/{% if offset < 10 %}{{ '0' }}{% endif %}{{ offset }}.png">
+  <h2>{{ effect.header }}</h2>
+  <p>
+    {{ effect.part1 }}
+  </p>
+</div>

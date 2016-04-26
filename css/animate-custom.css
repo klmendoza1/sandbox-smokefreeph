@@ -1,0 +1,33 @@
+.fadeInDown.delay-0 {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+.fadeInDown.delay-200 {
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+
+.fadeInDown.delay-400 {
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+
+/*
+.animated.fadeInDown.panel-jumbotron {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 100ms;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 100ms;
+  -o-animation-duration: 1s;
+  -o-animation-delay: 100ms;
+  animation-duration: 1s;
+  animation-delay: 100ms;
+}
+*/

@@ -1,0 +1,6 @@
+<div class="div-number">
+  <img class="img-responsive img-numbers wow fadeInDown {% if modulo == 2 %} delay-200{% elsif modulo == 0 %} delay-400{% endif %}" src="{{ site.baseurl }}/images/numbers/{% if forloop.index < 10 %}{{ '0' }}{% endif %}{{ forloop.index }}.png">
+  <p>
+    {{ number.part1 }}{% if number.part2 %}{{ '' }}{% else %}{{ ' ' }}{% endif %}<a {% if number.part2 %}class="a-inline" {% endif %}href="{{ number.href }}">{% if number.hrefContent %}{{ number.hrefContent }}{% endif %}<i class="fa fa-external-link{% if number.hrefContent %} hidden{% endif %}" aria-hidden="true"></i></a>{% if number.part2 %}{{ number.part2 }}{% endif %}
+  </p>
+</div>
